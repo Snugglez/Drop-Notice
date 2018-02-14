@@ -5,7 +5,7 @@ Originally designed to see if anything worth dropped from world bams, but could 
 
 `!dropnotice` or just `dropnotice` if used on /8 or /proxy chat channel to toggle it on or off
 
-Currently supported items are [Diamond, Pansophic Ash, Elemental Essence, Superior Etching box, Otherworldly Shard]
+Currently supported items are [Diamond, Pansophic Ash, Elemental Essence, Superior Etching box, Otherworldly Shard, Stormcry Equipment Chest, Frostmetal Equipment Chest]
 
 p.s.... requires command module, shouldn't need to link that should I?
 

@@ -20,6 +20,10 @@ else if(event.item === 98281)
 command.message('Superior Etching Box drop')
 else if(event.item === 98521)
 command.message('Otherworldly Shard drop')
+else if(event.item === 98532)
+command.message('Stormcry Equipment Chest')
+else if(event.item === 98531)
+command.message('Frostmetal Equipment Chest')
 })
 }
 
