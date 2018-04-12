@@ -8,7 +8,7 @@ command.add('dropnotice', () => {
 enabled = !enabled
 command.message(`Drop-Notice is now ${enabled ? 'enabled' : 'disabled'}.`)})
 
-dispatch.hook('S_SPAWN_DROPITEM', 1, (event) => {
+dispatch.hook('S_SPAWN_DROPITEM', 6, (event) => {
 if(!enabled) return;
 if(event.item === 369)
 command.message('Diamond drop')
