@@ -1,4 +1,5 @@
 {
-    "servers": ["https://raw.githubusercontent.com/Snugglez/Drop-Notice/master/"],
-    "supportUrl": ""
+	"disableAutoUpdate": false,
+	"servers": ["https://raw.githubusercontent.com/Snugglez/Drop-Notice/master/"],
+	"supportUrl": ""
 }

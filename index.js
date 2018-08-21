@@ -1,29 +1,27 @@
 const config = require('./config.json');
-const Command = require('command');
-module.exports = function dropnotice(dispatch) {
-const command = Command(dispatch)
+module.exports = function dropnotice(d) {
 let enabled = config.toggle;
 
-command.add('dropnotice', () => {
+d.command.add("dropnotice", {
+$default() {
 enabled = !enabled
-command.message(`Drop-Notice is now ${enabled ? 'enabled' : 'disabled'}.`)})
-
-dispatch.hook('S_SPAWN_DROPITEM', 6, (event) => {
+d.command.message(`Drop-Notice is now ${enabled ? 'enabled' : 'disabled'}.`)}})
+d.hook('S_SPAWN_DROPITEM', 6, (event) => {
 if(!enabled) return;
 if(event.item === 369)
-command.message('Diamond drop')
+d.command.message('Diamond drop')
 else if(event.item === 98512)
-command.message('Pansophic Ash drop')
+d.command.message('Pansophic Ash drop')
 else if(event.item === 98513)
-command.message('Elemental Essence')
+d.command.message('Elemental Essence')
 else if(event.item === 98281)
-command.message('Superior Etching Box drop')
+d.command.message('Superior Etching Box drop')
 else if(event.item === 98521)
-command.message('Otherworldly Shard drop')
+d.command.message('Otherworldly Shard drop')
 else if(event.item === 98532)
-command.message('Stormcry Equipment Chest')
+d.command.message('Stormcry Equipment Chest')
 else if(event.item === 98531)
-command.message('Frostmetal Equipment Chest')
+d.command.message('Frostmetal Equipment Chest')
 })
 }
 
